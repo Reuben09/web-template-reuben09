@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap");
+/* .....global styling...... */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* .....global styling...... */
+
+/* ......header container..... */
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 0.8rem 8rem; */
+  text-align: center;
+  align-items: center;
+}
+.header-container {
+  background-color: #fff;
+  color: rgb(49, 53, 77);
+}
+.navlinks {
+  display: flex;
+  transition: all 0.8s ease-in;
+}
+.links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: rgb(49, 53, 77);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.links a:hover {
+  color: rgb(249, 72, 84);
+}
+ul {
+  list-style: none;
+}
+.brand {
+  font-weight: bold;
+  align-self: center;
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+}
+.pink-color {
+  color: rgb(249, 72, 84);
+}
+.overrall-container {
+  text-align: center;
+}
+.toggle-button {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  color: rgb(49, 53, 77);
+  display: none;
+}
+.toggle-button:focus {
+  outline: none;
+}
+.register-getStarted-container {
+  display: flex;
+}
+.register-getStarted-container > div {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: rgb(49, 53, 77);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid rgb(49, 53, 77);
+}
+.register-getStarted-container > div:hover {
+  color: rgb(249, 72, 84);
+  cursor: pointer;
+}
+/* ......header container.... */
+
+/* ....media query..... */
+@media (max-width: 999px) {
+  nav {
+    flex-direction: column;
+  }
+  .navlinks {
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.2rem;
+  }
+  .brand {
+    padding-top: 1rem;
+  }
+  .register-getStarted-container {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 574px) {
+  .register-getStarted-container > div {
+    font-size: 16px;
+  }
+  .links a {
+    font-size: 16px;
+  }
+  .register-getStarted-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .brand {
+    padding-top: 0.5rem;
+  }
+  .navlinks {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+  }
+  .display-nav {
+    height: 300px;
+  }
+  .toggle-button {
+    display: initial;
+    cursor: pointer;
+    padding-top: 0.5rem;
+  }
+  nav {
+    padding: initial;
+  }
+}
+/* ....media query..... */
+
+/* ...... home scetion...... */
+
+.overrall-home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9a7c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fffcdc,
+    #d9a7c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  height: 30rem;
+}
+.home-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: rgb(49, 53, 77);
+  line-height: 3.5rem;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+.web-developer-text {
+  display: initial;
+  color: rgb(249, 72, 84);
+  margin-left: 0.7rem;
+}
+.button-container {
+  text-align: center;
+}
+.paragraph1 {
+  text-align: center;
+}
+.paragraph1 p {
+  color: rgb(49, 53, 77);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-left: -0.7rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: rgb(249, 72, 84);
+  border-radius: 0.2rem;
+  border: none;
+  color: rgb(245, 245, 246);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.overral-image-container {
+  height: 20rem;
+  width: 20rem;
+  margin-left: 9rem;
+}
+.overral-image-container > img {
+  fill: rgb(249, 72, 84);
+}
+/* ...... home scetion...... */
+
+/* ...media query....*/
+@media (max-width: 999px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+    padding-left: initial;
+    height: 50rem;
+  }
+  .home-h1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .button-container {
+    text-align: center;
+  }
+  .paragraph1 {
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overrall-home-container {
+    flex-direction: column;
+    margin-left: initial;
+  }
+  .overral-text-container {
+    margin-bottom: 3rem;
+  }
+  .overral-image-container {
+    height: 20rem;
+    width: 20rem;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 574px) {
+  .paragraph1 p {
+    font-size: 14px;
+  }
+  .home-h1 {
+    font-size: 2rem;
+  }
+  .flex {
+    display: initial;
+  }
+  .home-h1 {
+    line-height: 3rem;
+    font-size: 2.3rem;
+  }
+  .paragraph1 {
+    padding: 0 2.3rem;
+    text-align: center;
+  }
+  .paragraph1 p {
+    color: rgb(49, 53, 77);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 0.7rem;
+  }
+  .overral-image-container {
+    height: 18rem;
+    width: 18rem;
+  }
+}
+/* ...media query....*/
+
+/* .....servive section... */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-self: left;
+  text-align: left;
+  background: rgb(214, 213, 213);
+  padding: 4rem 12rem;
+}
+.services-text {
+  display: flex;
+  align-items: start;
+  margin-bottom: 0.4rem;
+}
+.services-text p {
+  font-size: 1.1rem;
+  color: rgb(49, 53, 77);
+  font-family: "Poppins", sans-serif;
+}
+.skill-set-text-h2 {
+  display: flex;
+  align-items: start;
+  margin-bottom: 0.4rem;
+  color: rgb(49, 53, 77);
+}
+.skill-set-text p {
+  line-height: 1.5rem;
+}
+.skill-set-text-h2 h1 {
+  color: rgb(249, 72, 84);
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "DM Sans", sans-serif;
+}
+.column-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+}
+span.line {
+  border: 3px solid rgb(249, 72, 84);
+  border-radius: 5px;
+  display: block;
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+.icon-container i {
+  font-size: 2rem;
+  color: rgb(249, 72, 84);
+}
+.column {
+  background-color: #fff;
+  padding: 4rem 2rem 2rem 2rem;
+  color: rgb(49, 53, 77);
+}
+.icon-container {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.skill-set-header {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.skill-set-header > h1 {
+  font-size: 1rem;
+  color: rgb(49, 53, 77);
+  font-family: "Poppins", sans-serif;
+}
+.skill-set-text {
+  text-align: left;
+}
+.skill-set-text > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+}
+/* .....servive section... */
+
+/* ....media query ..... */
+@media (max-width: 999px) {
+  .column-container {
+    grid-template-columns: auto;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-self: left;
+    text-align: left;
+  }
+}
+@media (max-width: 574px) {
+  .column-container {
+    grid-template-columns: auto;
+  }
+}
+/* ....media query ..... */
+
+/* ...media query.... */
+@media (max-width: 999px) {
+  .last-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-self: left;
+    text-align: left;
+  }
+  input {
+    display: block;
+    padding: 1.2rem 2rem;
+    background-color: #2d3042;
+    border: none;
+    margin: 1rem 0;
+  }
+  .form-header > h1 {
+    color: rgb(249, 72, 84);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: "DM Sans", sans-serif;
+  }
+  .button-container-section {
+    text-align: center;
+    background-color: rgb(249, 72, 84);
+    padding: 1.2rem 1.8rem;
+    margin-left: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+/* section four */
+
+.who-are-we {
+  padding-left: 12rem;
+  padding-right: 12rem;
+  color: rgb(49, 53, 77);
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-are-we-header h3 {
+  color: rgb(49, 53, 77);
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.who-are-we-header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.who-are-we-text p {
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+/* ...media query.... */
+@media (max-width: 999px) {
+  .who-are-we-text p {
+    line-height: 2rem;
+  }
+  .who-are-we {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 574px) {
+  .who-are-we-text p {
+    line-height: 1.5rem;
+  }
+  .who-are-we {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.get-intouch {
+  border: 1px solid rgb(249, 72, 84);
+  color: rgb(249, 72, 84);
+  margin-top: 1rem;
+}
+.red {
+  color: rgb(249, 72, 84);
+}
+@media (max-width: 574px) {
+  .experience {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .experience-text p {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+}
